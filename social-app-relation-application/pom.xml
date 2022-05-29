@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>social-app-relation</artifactId>
+        <groupId>com.kasprzak.kamil.relation</groupId>
+        <version>0.0.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>social-app-relation-application</artifactId>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!--project-->
+        <dependency>
+            <groupId>com.kasprzak.kamil.relation</groupId>
+            <artifactId>social-app-relation-database-infrastructure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.kasprzak.kamil.relation</groupId>
+            <artifactId>social-app-relation-spring-infrastructure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.kasprzak.kamil.relation</groupId>
+            <artifactId>social-app-relation-logic</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.kasprzak.kamil.relation</groupId>
+            <artifactId>social-app-relation-domain</artifactId>
+        </dependency>
+        <!--other-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
